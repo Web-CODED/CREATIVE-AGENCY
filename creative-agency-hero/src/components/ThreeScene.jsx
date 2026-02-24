@@ -1,11 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import { useGLTF, Text } from '@react-three/drei';
-import * as THREE from 'three';
+import * as THREE from 'three'; 
 
 const Model3D = ({ scrollProgress }) => {
   const groupRef = useRef();
-  const { scene } = useGLTF('/models/your-model.glb');
+  const { scene } = useGLTF('/models/dead_by_daylight_-_dustin_hendersen-v1-v1-v1.glb');
   const clonedScene = scene.clone();
 
   useFrame(() => {
